@@ -1,16 +1,27 @@
-# book_store_frontend
+# Online Book Store - Flutter (book_store_frontend)
 
-A new Flutter project.
+This mobile app lets users browse, search, and purchase books. It uses a modern "Ocean Professional" theme with blue primary (#2563EB), amber accents (#F59E0B), and error red (#EF4444). The UI features rounded corners, subtle gradients, shadows, and smooth transitions.
 
-## Getting Started
+Highlights:
+- Top navigation bar for Home, Catalog, Search, Cart, Account
+- Book listings grid and product details page
+- Cart management and mock checkout flow
+- Provider for lightweight state management
+- Mock API returning sample books
 
-This project is a starting point for a Flutter application.
+Getting Started
+1. flutter pub get
+2. flutter run
 
-A few resources to get you started if this is your first Flutter project:
+Structure
+- lib/main.dart: Entry point and providers
+- lib/src/theme/app_theme.dart: Ocean Professional ThemeData
+- lib/src/models: Book and CartItem models
+- lib/src/services/mock_api.dart: Mocked API
+- lib/src/state: Providers for catalog, cart, search
+- lib/src/pages: Home, Catalog, Search, Cart, Checkout, Account, ProductDetail
+- lib/src/widgets: Reusable UI (top navigation, book card)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Notes
+- Replace MockBookApi with real backend services later.
+- Environment variables and secrets should be placed in .env (already listed in pubspec assets).
